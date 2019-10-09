@@ -24,6 +24,7 @@ int main(int argc, char **argv) {
         };
         // for(int i=0; i<sizeof(buf); i++) LOG(" %02x", buf[i]); LOG("\n");
         ASSERT(hid_write(handle, buf, sizeof(buf)) >= 0);
+        return 0;
     }
     return 0;
 }
